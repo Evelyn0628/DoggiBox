@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoggiBox | Contact Us</title>
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <header id="topbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="../img/Home/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <a href="box.html">About Box</a>
+                <a href="theme.html">Monthly Theme</a>
+                <a href="sub.html">Subscription</a>
+                <a href="faq.html">FAQ's</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact">
+            <div class="container">
+                <div class="figure">
+                    <img src="../img/Contact/dog.png" alt="">
+                </div>
+                <form class="form_box">
+                    <div class="form">
+                        <label for="username">姓名</label>
+                        <input type="text" name="username" id="username" title="請輸入姓名" placeholder="Name"
+                            autocomplete="on" required>
+
+                        <label for="tel">聯絡電話</label>
+                        <input type="tel" name="tel" id="tel" title="請輸入聯絡電話" placeholder="0900-000-000"
+                            autocomplete="on">
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" title="請輸入Email" placeholder="doggibox@mail.com"
+                            autocomplete="on" required>
+
+                        <label for="message">留言</label>
+                        <textarea name="message" id="message" title="Message" placeholder="想對我們說..." required></textarea>
+                    </div>
+                    <button class="button" id="sendButton">
+                        <span>Send</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <script src="../js/contact.js"></script>
+    </main>
+
+    <footer>
+        <p>&copy; DoggiBox.</p>
+        <p>台北商業大學互動式前端網頁設計與開發實務班</p>
+    </footer>
+
+</body>
+
+</html>

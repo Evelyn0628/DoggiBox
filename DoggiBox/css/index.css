@@ -1,0 +1,423 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 網頁常用設定 */
+* {
+	box-sizing: border-box;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+body {
+	font-family:
+		/*西文*/
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+		/*中文*/
+		"Noto Sans TC", "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+
+/* Topbar */
+#topbar {
+    background-color: #FFF5EC;
+    position: fixed;
+    width: 100%;
+    /* height: 10vh; */
+}
+
+#topbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#topbar .container .logo {
+    margin-right: 20px;
+}
+
+#topbar .container .logo img {
+    width: 90px;
+}
+
+#topbar .container .menu {
+    display: flex;
+    border: 2px solid #269577;
+    border-radius: 50px;
+    padding: 20px 0;
+}
+
+#topbar .container .menu a {
+    font-family: Staatliches;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #000;
+    margin: 0 20px;
+}
+
+#topbar .container .menu a:hover {
+    color: #269577;
+}
+
+/* Main */
+#home {
+    background-color: #FFF5EC;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    padding-top: 100px;
+    height: 95vh;
+}
+
+#home .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .container .content {
+    display: flex;
+    flex-direction: column;
+}
+
+#home .container .content .title h2 {
+    font-family: Staatliches;
+    font-size: 80px;
+    letter-spacing: 3px;
+    color: #269577;
+    margin-bottom: 30px;
+}
+
+#home .container .content .title p {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+#home .container .content .button {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+#home .container .content .button a {
+    font-family: Staatliches;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #000;
+    background-color: #f4d548;
+    padding: 20px 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#home .container .content .button a:hover {
+    background-color: #f7be1f;
+}
+
+#home .container .content .discount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#home .container .content .discount label {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+#home .container .content .discount .form {
+    display: flex;
+    align-items: center;
+}
+
+#home .container .content .discount .form input {
+    width: 400px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+#home .container .content .discount .form .send button {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#home .container .content .discount .form .send img {
+    width: 40px;
+}
+
+#home .container .figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#home .container .figure .up,
+#home .container .figure .down {
+    display: flex;
+}
+
+#home .container .figure img {
+    width: 250px;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+/* Hover */
+figure.snip1478 {
+    position: relative;
+    overflow: hidden;
+    /* margin: 10px; */
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    -webkit-perspective: 50em;
+    perspective: 50em;
+}
+figure.snip1478 * {
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+figure.snip1478 img {
+    /* max-width: 100%; */
+    vertical-align: top;
+}
+figure.snip1478 figcaption {
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transform: translate(-10%, -30%);
+    transform: translate(-10%, -30%);
+}
+#home .container .figure .snip1478 figcaption img {
+    position: relative;
+    top: 100%;
+    left: 71px;
+    width: 30%;
+}
+figure.snip1478 h2,
+figure.snip1478 h4 {
+    margin: 0;
+}
+figure.snip1478 h2 {
+    font-family: Staatliches;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+figure.snip1478 h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+figure.snip1478 i {
+    font-size: 32px;
+}
+figure.snip1478:after {
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: rotate3d(-1, -1, 0, 100deg);
+    transform: rotate3d(-1, -1, 0, 100deg);
+    opacity: 0;
+}
+figure.snip1478 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+figure.snip1478:hover figcaption,
+figure.snip1478.hover figcaption {
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+figure.snip1478:hover:after,
+figure.snip1478.hover:after {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+    transform: rotate3d(0, 0, 0, 0deg);
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    background-color: #269577;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+}
+
+footer p {
+    color: #FFF5EC;
+    font-size: 15px;
+    margin: 0 10px;
+}

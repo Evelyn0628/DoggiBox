@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoggiBox | Theme | Christmas</title>
+    <link rel="stylesheet" href="../css/christmas.css">
+</head>
+
+<body>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        function App() {
+            const [email, setEmail] = React.useState('');
+
+            const handleButtonClick = () => {
+                if (email.trim() !== '') {
+                    alert('優惠代碼已寄送至您的 E-mail');
+                } else {
+                    alert('請輸入您的 E-mail');
+                }
+            };
+
+            return (
+                <div>
+                    <header id="topbar">
+                        <div className="container">
+                            <div className="logo">
+                                <a href="index.html"><img src="../img/Home/logo.png" alt="" /></a>
+                            </div>
+                            <div className="menu">
+                                <a href="box.html">About Box</a>
+                                <a href="theme.html">Monthly Theme</a>
+                                <a href="sub.html">Subscription</a>
+                                <a href="faq.html">FAQ's</a>
+                                <a href="contact.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </header>
+                    <main>
+                        <section id="theme">
+                            <div className="container">
+                                <div className="content">
+                                    <div className="title_box">
+                                        <div className="title">
+                                            <div className="text">
+                                                <h2>Happy Merry Christmas</h2>
+                                                <p>聖誕節來臨，準備好迎接盲盒幸福時刻了嗎？每個商品都是一個小小的驚喜，等待著在您的手中綻放節慶的歡笑！</p>
+                                            </div>
+                                            <div className="button">
+                                                <a href="get.html" target="_blank" rel="noopener noreferrer">Get DoggiBox</a>
+                                            </div>
+                                        </div>
+                                        <div className="product">
+                                            <img src="../img/Christmas/product1.png" alt="" />
+                                            <div className="intro">
+                                                <p> FEATURED TOY</p>
+                                                <h1>聖誕老人抱抱窩</h1>
+                                                <h2>紅色帽子、圓圓鼻頭的聖誕老人為您打造聖誕限定櫥窗。滿載祝福的讓毛小孩在聖誕老人懷裡陷入美夢。</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="product_box left">
+                                        <div className="product left">
+                                            <div className="intro">
+                                                <p> FEATURED TOY</p>
+                                                <h1>聖誕兩用圍巾帽</h1>
+                                                <h2>為毛小孩穿上聖誕紅，營造可愛節慶風，盡情綻放牠的可愛風采。</h2>
+                                            </div>
+                                            <img src="../img/Christmas/product2.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div className="product_box right">
+                                        <div className="product right">
+                                            <img src="../img/Christmas/product3.png" alt="" />
+                                            <div className="intro">
+                                                <p> FEATURED TOY</p>
+                                                <h1>雪人咬繩</h1>
+                                                <h2>理想的遊戲夥伴，紅白繩交織，結實耐咬，讓寵物享受磨牙樂趣，和雪人一起度過歡樂時光。</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="product_box left">
+                                        <div className="product left">
+                                            <div className="intro">
+                                                <p> FEATURED TOY</p>
+                                                <h1>聖誕老人發聲玩具</h1>
+                                                <h2>是毛小孩的玩具，也是家裡的裝飾。透過啾啾聲吸引牠的好奇心，讓聖誕老公公帶來無盡的歡樂。</h2>
+                                            </div>
+                                            <img src="../img/Christmas/product4.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div className="product_box right">
+                                        <div className="product right">
+                                            <img src="../img/Christmas/product5.png" alt="" />
+                                            <div className="intro">
+                                                <p> FEATURED TOY</p>
+                                                <h1>聖誕老人咬繩</h1>
+                                                <h2>理想的遊戲夥伴，紅白繩交織，結實耐咬，讓寵物享受磨牙樂趣，和雪聖誕老人一起度過歡樂時光。</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="product_box left">
+                                        <div className="product left">
+                                            <div className="intro">
+                                                <p> SPECIAL TOY</p>
+                                                <h1>聖誕節倒數盒</h1>
+                                                <h2>等待聖誕節的這一周，陪毛小孩一起倒數，每天打開一個驚喜，讓這一周成為最開心的時間！</h2>
+                                            </div>
+                                            <img src="../img/Christmas/product6.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="order">
+                                    <div className="figure">
+                                        <img src="../img/Christmas/dog.png" alt="" />
+                                    </div>
+                                    <div className="content">
+                                        <div className="text">
+                                            <h2>訂閱毛孩每月的快樂</h2>
+                                            <p>聖誕節來臨，準備好迎接盲盒幸福時刻了嗎？每個商品都是一個小小的驚喜，等待著在您的手中綻放節慶的歡笑！</p>
+                                        </div>
+                                        <div className="button">
+                                            <a href="get.html" target="_blank" rel="noopener noreferrer">Get DoggiBox</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                    <footer>
+                        <p>&copy; DoggiBox.</p>
+                        <p>台北商業大學互動式前端網頁設計與開發實務班</p>
+                    </footer>
+                </div>
+            )
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+
+    <!-- <header id="topbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="../img/Home/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <a href="box.html">About Box</a>
+                <a href="theme.html">Monthly Theme</a>
+                <a href="sub.html">Subscription</a>
+                <a href="faq.html">FAQ's</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- <main>
+        <section id="theme">
+            <div class="container">
+                <div class="content">
+                    <div class="title_box">
+                        <div class="title">
+                            <div class="text">
+                                <h2>Happy Merry Christmas</h2>
+                                <p>聖誕節來臨，準備好迎接盲盒幸福時刻了嗎？每個商品都是一個小小的驚喜，等待著在您的手中綻放節慶的歡笑！</p>
+                            </div>
+                            <div class="button">
+                                <a href="get.html" target="_blank">Get DoggiBox</a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../img/Christmas/product1.png" alt="">
+                            <div class="intro">
+                                <p> FEATURED TOY</p>
+                                <h1>聖誕老人抱抱窩</h1>
+                                <h2>紅色帽子、圓圓鼻頭的聖誕老人為您打造聖誕限定櫥窗。滿載祝福的讓毛小孩在聖誕老人懷裡陷入美夢。</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_box left">
+                        <div class="product left">
+                            <div class="intro">
+                                <p> FEATURED TOY</p>
+                                <h1>聖誕兩用圍巾帽</h1>
+                                <h2>為毛小孩穿上聖誕紅，營造可愛節慶風，盡情綻放牠的可愛風采。</h2>
+                            </div>
+                            <img src="../img/Christmas/product2.png" alt="">
+                        </div>
+                    </div>
+                    <div class=" product_box right">
+                        <div class="product right">
+                            <img src="../img/Christmas/product3.png" alt="">
+                            <div class="intro">
+                                <p> FEATURED TOY</p>
+                                <h1>雪人咬繩</h1>
+                                <h2>理想的遊戲夥伴，紅白繩交織，結實耐咬，讓寵物享受磨牙樂趣，和雪人一起度過歡樂時光。</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_box left">
+                        <div class="product left">
+                            <div class="intro">
+                                <p> FEATURED TOY</p>
+                                <h1>聖誕老人發聲玩具</h1>
+                                <h2>是毛小孩的玩具，也是家裡的裝飾。透過啾啾聲吸引牠的好奇心，讓聖誕老公公帶來無盡的歡樂。</h2>
+                            </div>
+                            <img src="../img/Christmas/product4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product_box right">
+                        <div class="product right">
+                            <img src="../img/Christmas/product5.png" alt="">
+                            <div class="intro">
+                                <p> FEATURED TOY</p>
+                                <h1>聖誕老人咬繩</h1>
+                                <h2>理想的遊戲夥伴，紅白繩交織，結實耐咬，讓寵物享受磨牙樂趣，和雪聖誕老人一起度過歡樂時光。</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_box left">
+                        <div class="product left">
+                            <div class="intro">
+                                <p> SPECIAL TOY</p>
+                                <h1>聖誕節倒數盒</h1>
+                                <h2>等待聖誕節的這一周，陪毛小孩一起倒數，每天打開一個驚喜，讓這一周成為最開心的時間！</h2>
+                            </div>
+                            <img src="../img/Christmas/product6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="figure">
+                        <img src="../img/Christmas/dog.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="text">
+                            <h2>訂閱毛孩每月的快樂</h2>
+                            <p>聖誕節來臨，準備好迎接盲盒幸福時刻了嗎？每個商品都是一個小小的驚喜，等待著在您的手中綻放節慶的歡笑！</p>
+                        </div>
+                        <div class="button">
+                            <a href="get.html" target="_blank">Get DoggiBox</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> -->
+
+    <!-- <footer>
+        <p>&copy; DoggiBox.</p>
+        <p>台北商業大學互動式前端網頁設計與開發實務班</p>
+    </footer> -->
+
+</body>
+
+</html>

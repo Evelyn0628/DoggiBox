@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 網頁常用設定 */
+* {
+	box-sizing: border-box;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+body {
+	font-family:
+		/*西文*/
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+		/*中文*/
+		"Noto Sans TC", "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+
+/* Topbar */
+#topbar {
+    background-color: #FFF5EC;
+    position: fixed;
+    width: 100%;
+    /* height: 10vh; */
+}
+
+#topbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#topbar .container .logo {
+    margin-right: 20px;
+}
+
+#topbar .container .logo img {
+    width: 90px;
+}
+
+#topbar .container .menu {
+    display: flex;
+    border: 2px solid #269577;
+    border-radius: 50px;
+    padding: 20px 0;
+}
+
+#topbar .container .menu a {
+    font-family: Staatliches;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #000;
+    margin: 0 20px;
+}
+
+#topbar .container .menu a:hover {
+    color: #269577;
+}
+
+/* Main */
+#faq {
+    background-color: #FFF5EC;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    padding-top: 100px;
+    height: 95vh;
+}
+
+#faq .contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#faq .contain .title .text h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #269577;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+/* codepen */
+#faq .container {
+    margin: 0 auto;
+    padding: 0 100px;
+    width: 100%;
+}
+#faq .accordion .accordion-item {
+    border-bottom: 2px solid #269577;
+    margin-bottom: 20px;
+}  
+#faq .accordion button[aria-expanded="true"] {
+    border-bottom: 1px solid #269577;
+}  
+#faq .accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 20px 0;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    /* font-weight: 400; */
+    border: none;
+    background: none;
+    outline: none;
+}
+#faq .accordion button:hover,
+#faq .accordion button:focus {
+    cursor: pointer;
+    color: #269577;
+}
+#faq .accordion button:hover::after,
+#faq .accordion button:focus::after {
+    cursor: pointer;
+    color: #269577;
+    border: 1px solid #269577;
+}
+#faq .accordion .accordion-title {
+    padding: 0 1.5em 1em 0;
+}
+#faq .accordion .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+#faq .accordion .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+#faq .accordion .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+#faq .accordion button[aria-expanded="true"] {
+    color: #269577;
+}
+#faq .accordion button[aria-expanded="true"] .icon::after {
+    width: 0;
+}
+#faq .accordion button[aria-expanded="true"] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+#faq .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+#faq .accordion .accordion-content p {
+    font-size: 18px;
+    line-height: 150%;
+    /* font-weight: 300; */
+    margin: 1.5em 0;
+}
+
+
+/* Footer */
+footer {
+    background-color: #269577;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+}
+
+footer p {
+    color: #FFF5EC;
+    font-size: 15px;
+    margin: 0 10px;
+}

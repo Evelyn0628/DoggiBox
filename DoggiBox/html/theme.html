@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoggiBox | Monthly Theme</title>
+    <link rel="stylesheet" href="../css/theme.css">
+</head>
+
+<body>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        function App() {
+            const [email, setEmail] = React.useState('');
+
+            const handleButtonClick = () => {
+                if (email.trim() !== '') {
+                    alert('優惠代碼已寄送至您的 E-mail');
+                } else {
+                    alert('請輸入您的 E-mail');
+                }
+            };
+
+            return (
+                <div>
+                    <header id="topbar">
+                        <div className="container">
+                            <div className="logo">
+                                <a href="index.html"><img src="../img/Home/logo.png" alt="" /></a>
+                            </div>
+                            <div className="menu">
+                                <a href="box.html">About Box</a>
+                                <a href="theme.html">Monthly Theme</a>
+                                <a href="sub.html">Subscription</a>
+                                <a href="faq.html">FAQ's</a>
+                                <a href="contact.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </header>
+                    <main>
+                        <section id="theme">
+                            <div className="section full-height over-hide px-4 px-sm-0">
+                                <div className="container">
+                                    <div className="row full-height justify-content-center">
+                                        <div className="col-lg-10 col-xl-8 align-self-center padding-tb">
+                                            <div className="section mx-auto text-center slider-height-padding">
+                                                <input className="checkbox frst" type="radio" id="slide-1" name="slider" defaultChecked />
+                                                <label htmlFor="slide-1"></label>
+                                                <input className="checkbox scnd" type="radio" name="slider" id="slider-2" />
+                                                <label htmlFor="slider-2"></label>
+                                                <input className="checkbox thrd" type="radio" name="slider" id="slider-3" />
+                                                <label htmlFor="slider-3"></label>
+                                                <ul>
+                                                    <li>
+                                                        <span>Chinese New Year</span>
+                                                        <p>二Ｏ二四 蒸滿壹龍 - 寵物年菜。</p>
+                                                        <a href="#"></a>
+                                                    </li>
+                                                    <li>
+                                                        <span>Merry Christmas</span>
+                                                        <p>和聖誕老公公一起過聖誕！</p>
+                                                        <a href="christmas.html"></a>
+                                                    </li>
+                                                    <li>
+                                                        <span>Fast Food</span>
+                                                        <p>進入速食樂園，打造美味驚喜。</p>
+                                                        <a href="#"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                    <footer>
+                        <p>&copy; DoggiBox.</p>
+                        <p>台北商業大學互動式前端網頁設計與開發實務班</p>
+                    </footer>
+                </div>
+            )
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+
+    <!-- <header id="topbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="../img/Home/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <a href="box.html">About Box</a>
+                <a href="theme.html">Monthly Theme</a>
+                <a href="sub.html">Subscription</a>
+                <a href="faq.html">FAQ's</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- <main>
+        <section id="theme">
+            <div class="section full-height over-hide px-4 px-sm-0">
+                <div class="container">
+                    <div class="row full-height justify-content-center">
+                        <div class="col-lg-10 col-xl-8 align-self-center padding-tb">
+                            <div class="section mx-auto text-center slider-height-padding">
+                                <input class="checkbox frst" type="radio" id="slide-1" name="slider" checked />
+                                <label for="slide-1"></label>
+                                <input class="checkbox scnd" type="radio" name="slider" id="slider-2" />
+                                <label for="slider-2"></label>
+                                <input class="checkbox thrd" type="radio" name="slider" id="slider-3" />
+                                <label for="slider-3"></label>
+                                <ul>
+                                    <li>
+                                        <span>Chinese New Year</span>
+                                        <p>二Ｏ二四 蒸滿壹龍 - 寵物年菜。</p>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <span>Merry Christmas</span>
+                                        <p>和聖誕老公公一起過聖誕！</p>
+                                        <a href="christmas.html"></a>
+                                    </li>
+                                    <li>
+                                        <span>Fast Food</span>
+                                        <p>進入速食樂園，打造美味驚喜。</p>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> -->
+
+    <!-- <footer>
+        <p>&copy; DoggiBox.</p>
+        <p>台北商業大學互動式前端網頁設計與開發實務班</p>
+    </footer> -->
+
+</body>
+
+</html>
