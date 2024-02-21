@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 網頁常用設定 */
+* {
+	box-sizing: border-box;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+body {
+	font-family:
+		/*西文*/
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+		/*中文*/
+		"Noto Sans TC", "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+
+/* Topbar */
+#topbar {
+    background-color: #FFF5EC;
+    position: fixed;
+    width: 100%;
+    /* height: 10vh; */
+}
+
+#topbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#topbar .container .logo {
+    margin-right: 20px;
+}
+
+#topbar .container .logo img {
+    width: 90px;
+}
+
+#topbar .container .menu {
+    display: flex;
+    border: 2px solid #269577;
+    border-radius: 50px;
+    padding: 20px 0;
+}
+
+#topbar .container .menu a {
+    font-family: Staatliches;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #000;
+    margin: 0 20px;
+}
+
+#topbar .container .menu a:hover {
+    color: #269577;
+}
+
+/* Main */
+#contact {
+    background-color: #FFF5EC;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    padding-top: 100px;
+    height: 95vh;
+}
+
+#contact .container {
+    display: flex;
+    align-items: center;
+}
+
+#contact .container .figure {
+    display: flex;
+    justify-content: center;
+}
+
+#contact .container .figure img {
+    width: 70%;
+    margin-top: 50px;
+}
+
+#contact .container .form_box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+#contact .container .form_box .form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .container .form_box .form label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+#contact .container .form_box .form input {
+    background-color: #fff;
+    border: 2px solid #269577;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 0 10px;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+#contact .container .form_box .form textarea {
+    background-color: #fff;
+    border: 2px solid #269577;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#contact .container .form_box .button {
+    background-color: #f4d548;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#contact .container .form_box .button:hover {
+    background-color: #f7be1f;
+}
+
+#contact .container .form_box .button span {
+    font-family: Staatliches;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #269577;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+}
+
+footer p {
+    color: #FFF5EC;
+    font-size: 15px;
+    margin: 0 10px;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoggiBox</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        function App() {
+            const [email, setEmail] = React.useState('');
+
+            const handleButtonClick = () => {
+                if (email.trim() !== '') {
+                    alert('優惠代碼已寄送至您的 E-mail');
+                } else {
+                    alert('請輸入您的 E-mail');
+                }
+            };
+
+            return (
+                <div>
+                    <header id="topbar">
+                        <div className="container">
+                            <div className="logo">
+                                <a href="index.html"><img src="../img/Home/logo.png" alt="" /></a>
+                            </div>
+                            <div className="menu">
+                                <a href="box.html">About Box</a>
+                                <a href="theme.html">Monthly Theme</a>
+                                <a href="sub.html">Subscription</a>
+                                <a href="faq.html">FAQ's</a>
+                                <a href="contact.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </header>
+                    <main>
+                        <section id="home">
+                            <div className="container">
+                                <div className="content">
+                                    <div className="title">
+                                        <h2>Monthly Joy For Your Doggie !</h2>
+                                        <p>為您的毛孩挑選獨一無二的禮物，每個月都有驚喜等著牠。</p>
+                                        <p>加入 DoggiBox，讓您的毛孩擁有屬於牠的快樂時光！</p>
+                                    </div>
+                                    <div className="button">
+                                        <a href="get.html" target="_blank" rel="noopener noreferrer">Get DoggiBox</a>
+                                        <a href="sub.html">Subscription</a>
+                                    </div>
+                                    <div className="discount">
+                                        <label htmlFor="email">註冊並領取獨家優惠！</label>
+                                        <div className="form">
+                                            <input type="email" name="email" id="email" title="請輸入Email" placeholder="Enter Your Email" autoComplete="on" value={email}
+                                                onChange={(e) => setEmail(e.target.value)} required />
+                                            <div className="send">
+                                                <button id="sendButton" onClick={handleButtonClick}><img src="../img/Home/icon1.png" alt="" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="figure">
+                                    <div className="up">
+                                        <figure className="snip1478">
+                                            <img src="../img/Home/1.png" alt="sq-sample36" />
+                                            <figcaption><i className="ion-podium"></i>
+                                                <img src="../img/Home/icon2.png" alt="" />
+                                                <h2>About Box</h2>
+                                                <h4>關於盒子</h4>
+                                            </figcaption>
+                                            <a href="box.html"></a>
+                                        </figure>
+                                        <figure className="snip1478">
+                                            <img src="../img/Home/2.png" alt="sq-sample36" />
+                                            <figcaption><i className="ion-podium"></i>
+                                                <img src="../img/Home/icon2.png" alt="" />
+                                                <h2>Monthly Theme</h2>
+                                                <h4>每月主題</h4>
+                                            </figcaption>
+                                            <a href="theme.html"></a>
+                                        </figure>
+                                    </div>
+                                    <div className="down">
+                                        <figure className="snip1478">
+                                            <img src="../img/Home/3.png" alt="sq-sample36" />
+                                            <figcaption><i className="ion-podium"></i>
+                                                <img src="../img/Home/icon2.png" alt="" />
+                                                <h2>Subscription</h2>
+                                                <h4>訂閱</h4>
+                                            </figcaption>
+                                            <a href="sub.html"></a>
+                                        </figure>
+                                        <figure className="snip1478">
+                                            <img src="../img/Home/4.png" alt="sq-sample36" />
+                                            <figcaption><i className="ion-podium"></i>
+                                                <img src="../img/Home/icon2.png" alt="" />
+                                                <h2>FAQ's</h2>
+                                                <h4>常見問題</h4>
+                                            </figcaption>
+                                            <a href="faq.html"></a>
+                                        </figure>
+                                        <figure className="snip1478">
+                                            <img src="../img/Home/5.png" alt="sq-sample36" />
+                                            <figcaption><i className="ion-podium"></i>
+                                                <img src="../img/Home/icon2.png" alt="" />
+                                                <h2>Contact Us</h2>
+                                                <h4>聯絡我們</h4>
+                                            </figcaption>
+                                            <a href="contact.html"></a>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                    <footer>
+                        <p>&copy; DoggiBox.</p>
+                        <p>台北商業大學互動式前端網頁設計與開發實務班</p>
+                    </footer>
+                </div>
+            )
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+
+    <!-- <header id="topbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="../img/Home/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <a href="box.html">About Box</a>
+                <a href="theme.html">Monthly Theme</a>
+                <a href="sub.html">Subscription</a>
+                <a href="faq.html">FAQ's</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- <main>
+        <section id="home">
+            <div class="container">
+                <div class="content">
+                    <div class="title">
+                        <h2>Monthly Joy For Your Doggie !</h2>
+                        <p>為您的毛孩挑選獨一無二的禮物，每個月都有驚喜等著牠。</p>
+                        <p>加入 DoggiBox，讓您的毛孩擁有屬於牠的快樂時光！</p>
+                    </div>
+                    <div class="button">
+                        <a href="get.html" target="_blank">Get DoggiBox</a>
+                        <a href="sub.html">Subscription</a>
+                    </div>
+                    <div class="discount">
+                        <label for="email">註冊並領取獨家優惠！</label>
+                        <div class="form">
+                            <input type="email" name="email" id="email" title="請輸入Email" placeholder="Enter Your Email"
+                                autocomplete="on" required>
+                            <div class="send">
+                                <button id="sendButton"><img src="../img/Home/icon1.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure">
+                    <div class="up">
+                        <figure class="snip1478">
+                            <img src="../img/Home/1.png" alt="sq-sample36" />
+                            <figcaption><i class="ion-podium"></i>
+                                <img src="../img/Home/icon2.png" alt="">
+                                <h2>About Box</h2>
+                                <h4>關於盒子</h4>
+                            </figcaption>
+                            <a href="box.html"></a>
+                        </figure>
+                        <figure class="snip1478">
+                            <img src="../img/Home/2.png" alt="sq-sample36" />
+                            <figcaption><i class="ion-podium"></i>
+                                <img src="../img/Home/icon2.png" alt="">
+                                <h2>Monthly Theme</h2>
+                                <h4>每月主題</h4>
+                            </figcaption>
+                            <a href="theme.html"></a>
+                        </figure>
+                    </div>
+                    <div class="down">
+                        <figure class="snip1478">
+                            <img src="../img/Home/3.png" alt="sq-sample36" />
+                            <figcaption><i class="ion-podium"></i>
+                                <img src="../img/Home/icon2.png" alt="">
+                                <h2>Subscription</h2>
+                                <h4>訂閱</h4>
+                            </figcaption>
+                            <a href="sub.html"></a>
+                        </figure>
+                        <figure class="snip1478">
+                            <img src="../img/Home/4.png" alt="sq-sample36" />
+                            <figcaption><i class="ion-podium"></i>
+                                <img src="../img/Home/icon2.png" alt="">
+                                <h2>FAQ's</h2>
+                                <h4>常見問題</h4>
+                            </figcaption>
+                            <a href="faq.html"></a>
+                        </figure>
+                        <figure class="snip1478">
+                            <img src="../img/Home/5.png" alt="sq-sample36" />
+                            <figcaption><i class="ion-podium"></i>
+                                <img src="../img/Home/icon2.png" alt="">
+                                <h2>Contact Us</h2>
+                                <h4>聯絡我們</h4>
+                            </figcaption>
+                            <a href="contact.html"></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> -->
+
+    <!-- <footer>
+        <p>&copy; DoggiBox.</p>
+        <p>台北商業大學互動式前端網頁設計與開發實務班</p>
+    </footer> -->
+
+    <!-- <script src="../js/index.js"></script> -->
+</body>
+
+</html>

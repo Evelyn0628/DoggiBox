@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoggiBox | Order Success</title>
+    <link rel="stylesheet" href="../css/finifsh.css">
+</head>
+
+<body>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        function App() {
+            return (
+                <div>
+                    <section id="finish">
+                        <div className="container">
+                            <div className="title">
+                                <h2>您的訂單已完成付款！</h2>
+                            </div>
+                            <div className="figure">
+                                <img src="../img/finish.png" alt="" />
+                            </div>
+                            <div className="text">
+                                <p>稍後將寄送訂單詳細資訊至您的E-mail</p>
+                            </div>
+                            <div className="button">
+                                <a href="../html/index.html">返回首頁</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            )
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+
+
+
+    <!-- <section id="finish">
+        <div class="container">
+            <div class="title">
+                <h2>您的訂單已完成付款！</h2>
+            </div>
+            <div class="figure">
+                <img src="../img/finish.png" alt="">
+            </div>
+            <div class="text">
+                <p>稍後將寄送訂單詳細資訊至您的E-mail</p>
+            </div>
+            <div class="button">
+                <a href="../html/index.html">返回首頁</a>
+            </div>
+        </div>
+    </section> -->
+
+</body>
+
+</html>
