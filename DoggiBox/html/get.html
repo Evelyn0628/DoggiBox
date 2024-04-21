@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoggiBox | Get Box</title>
+    <link rel="stylesheet" href="../css/style_get.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>訂購 DoggiBox</header>
+        <div class="progress-bar">
+            <div class="step">
+                <p>About</p>
+                <div class="bullet">
+                    <span>1</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Information</p>
+                <div class="bullet">
+                    <span>2</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Other</p>
+                <div class="bullet">
+                    <span>3</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Contact</p>
+                <div class="bullet">
+                    <span>4</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Address</p>
+                <div class="bullet">
+                    <span>5</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Subscription</p>
+                <div class="bullet">
+                    <span>6</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+        </div>
+        <div class="form-outer">
+            <form action="#">
+                <div class="page slide-page">
+                    <div class="title">關於毛孩</div>
+                    <div class="field">
+                        <div class="label">名字</div>
+                        <input type="text" />
+                    </div>
+                    <div class="field">
+                        <div class="label">性別</div>
+                        <select>
+                            <option disabled selected hidden>請選擇</option>
+                            <option>我是男生</option>
+                            <option>我是女生</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <button class="firstNext next">下一步</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">毛孩資訊</div>
+                    <div class="field">
+                        <div class="label">生日</div>
+                        <input type="date"/>
+                    </div>
+                    <div class="field">
+                        <div class="label">體型</div>
+                        <select required>
+                            <option disabled selected hidden>請選擇</option>
+                            <option>小型犬 ( 10公斤以下 )</option>
+                            <option>中型犬 ( 11~34公斤 )</option>
+                            <option>大型犬 ( 35公斤以上 )</option>
+                        </select>
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-1 prev">上一步</button>
+                        <button class="next-1 next">下一步</button>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="title">毛孩注意事項</div>
+                    <div class="field">
+                        <div class="label">過敏</div>
+                        <select>
+                            <option disabled selected hidden>請選擇</option>
+                            <option>無</option>
+                            <option>有 ( 請於下面註明 )</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="label">備註</div>
+                        <input type="message" />
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-2 prev">上一步</button>
+                        <button class="next-2 next">下一步</button>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="title">關於鏟屎官</div>
+                    <div class="field">
+                        <div class="label">姓名</div>
+                        <input type="text"/>
+                    </div>
+                    <div class="field">
+                        <div class="label">聯絡電話</div>
+                        <input type="tel"/>
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-3 prev">上一步</button>
+                        <button class="next-3 next">下一步</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">鏟屎官資訊</div>
+                    <div class="field">
+                        <div class="label">Email</div>
+                        <input type="email"/>
+                    </div>
+                    <div class="field">
+                        <div class="label">地址</div>
+                        <input type="text"/>
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-4 prev">上一步</button>
+                        <button class="next-4 next">下一步</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">訂閱</div>
+                    <div class="field">
+                        <div class="label">訂閱方式</div>
+                        <select required>
+                            <option disabled selected hidden>請選擇</option>
+                            <option>1 個月</option>
+                            <option>3 個月</option>
+                            <option>6 個月</option>
+                            <option>12 個月</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="label">優惠碼</div>
+                        <input type="text" />
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-5 prev">上一步</button>
+                        <button class="submit"><a href="./pay.html">付款</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../js/getBox.js"></script>
+</body>
+
+</html>
